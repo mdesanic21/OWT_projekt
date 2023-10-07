@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Ponuda hotela</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Autor" content="Matej Desanić">
+    <meta name="Opis" content="Stranica sa ponudom hotela, lokacijama ponuda i tipkom za rezervaciju.">
+    <meta name="Ključne riječi" content="Ponuda, rezervacija, cjenik">
+    <link rel="stylesheet" type="text/css" href="/css/mdesanic21.css">
+    <link rel="stylesheet" type="text/css" href="/css/mdesanic21_responzivni_dizajn.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../dokumenti/slike/logo.png" alt="Hotel Bravado" id="logo" width="60" height="60"></a>
+        <h1 class="naslov">Hotel Bravado</h1>
+    </header>
+    <nav class="izbornik">
+        <a href="/index">Početna</a>
+        <a href="/autor">Autor</a>
+        <a href="/cjenik" >Cjenik</a>
+        <a href="/galerija">Galerija</a>
+        <a href="/kontakt">Kontakt</a>
+        <a href="/rezervacije">Rezervacije</a>
+        <a href="/dokumentacija">Dokumentacija</a>
+        <a href="/dinamicna" id="trenutni">Dinamična</a>
+        <a href="/api/rezervacije">REST servisi</a>
+    </nav>
+    <img src="../dokumenti/slike/banner.jpg" id="banner" height="250" alt="banner">
+    <main>
+        <div></div>
+        <div class="cjenik">
+        <div id="cjenik" class="tablica">

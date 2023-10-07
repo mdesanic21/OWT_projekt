@@ -1,0 +1,35 @@
+[
+    {
+        "Usluga": "Doručak",
+        "Cijena": 10.99
+      },
+      {
+        "Usluga": "Ručak",
+        "Cijena": 20.99
+      },
+      {
+        "Usluga": "Večera",
+        "Cijena": 25.99
+      },
+      {
+        "Usluga": "Wellness centar",
+        "Cijena": 30.99
+      },
+      {
+        "Usluga": "Bazen",
+        "Cijena": 15.99
+      },
+      {
+        "Usluga": "Fitness centar",
+        "Cijena": 10.99
+      },
+      {
+        "Usluga": "Dječji klub",
+        "Cijena": 5.99
+      },
+      {
+        "Usluga": "Prijevoz do zračne luke",
+        "Cijena": 40.99
+      }
+]
+      

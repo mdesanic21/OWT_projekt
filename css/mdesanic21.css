@@ -1,0 +1,229 @@
+* {
+  font-style: italic;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    background-color: #F5F0BB;
+    overflow: scroll;
+  }
+  figcaption{
+    padding: 10px;
+    text-align: center;
+  }
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #B3C890;
+
+  }
+  
+  h1.naslov {
+    color: #FFF;
+    font-size: 32px;
+    margin: 0;
+  }
+  #trenutni{
+    text-decoration: underline;
+  }
+  nav.izbornik {
+    text-align: center;
+    padding: 10px;
+    background-color: #647050;
+  }
+  
+  nav.izbornik a {
+    color: #FFF;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav.izbornik a:hover {
+    background-color: #FFF;
+    color: #73A9AD;
+  }
+
+  #banner {
+    width: 100%;
+    height: auto;
+  }
+  
+  .ponuda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #F5F0BB;
+  }
+  
+  .ponuda a {
+    color: #73A9AD;
+    text-decoration: none;
+  }
+
+  .ponuda a:hover {
+    text-decoration: underline;
+  }
+
+  .ponuda-glava {
+    color: #73A9AD;
+    font-size: 14px;
+    margin: 0;
+    text-align: justify;
+  }
+  
+  .ponuda_slika {
+    width: 100%;
+    height: auto;
+  }
+  /* Kompleksni ~ */
+  #ponuda-grcka-tijelo ~ #ponuda-turska-tijelo ~ #ponuda-egipat-tijelo {
+    margin-top: 10px;
+  }
+/* Stilovi za tablicu */
+.cjenik {
+  margin-top: 20px;
+}
+
+.tablica {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 1px solid #000000;
+}
+
+td, th{
+  border: 1px solid black;
+}
+/* Kompleksni razmak */
+.tablica caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #0D3B66;
+}
+/* Kompleksni + */
+.tablica th + .tablica td {
+  border: 1px solid #0D3B66;
+  padding: 8px;
+}
+
+.tablica th {
+  background-color: #DEF7FF;
+}
+
+.tablica tr:nth-child(even) {
+  background-color: #F1FAEE;
+}
+
+.tablica tr:nth-child(odd) {
+  background-color: #c7f1b9;
+}
+.tablica tr:hover {
+  background-color: #FFD166;
+}
+/* Stilovi za galeriju*/
+figcaption{
+  align-content: baseline;
+}
+
+.figura-div img{
+  height: 300px;
+  width: 300px;
+}
+
+.figura-div{
+  transition: transform .3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}  
+
+.figura-div:hover{
+  transform: scale(1.1); 
+}
+.trenutni {
+  background-color:#B3C890;
+}
+  /* Stilovi za rezervaciju */
+  .rezervacija-t {
+    background-color: #F5F0BB;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .rezervacija-t h1 {
+    color: #73A9AD;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  
+  .rezervacija form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  /* Selektor atributa */
+  .rezervacija .botun[type="submit"] {
+    background-color: #73A9AD;
+    color: #FFF;
+    cursor: pointer;
+  }
+  
+  .rezervacija > .botun[type="reset"] {
+    background-color: #FFF;
+    color: #73A9AD;
+    cursor: pointer;
+  }
+/* Stilovi za podnožje */
+  footer {
+    position: relative;
+    bottom: 0;
+    background-color: #B3C890;
+    text-align: center;
+    padding: 20px;
+    color: #FFF;
+    font-size: 14px;
+  }
+    
+  footer a {
+    color: #FFF;
+    text-decoration: none;
+  }
+    
+  footer img {
+    vertical-align: middle;
+  }
+
+#info{
+  text-align: center;
+}
+
+.rotate-animation {
+  transform: rotate();
+  transition: transform 0.3s ease;
+}
+
+.custom-animation-1 {
+  background-color: yellow;
+  transition: background-color 0.3s ease;
+}
+
+.custom-animation-2 {
+  /* Define the custom animation 2 styles */
+  /* Add your desired animation styles */
+  /* For example, scale the element */
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+#ponuda_slika_egipat{
+  position: relative;
+}

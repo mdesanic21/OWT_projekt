@@ -1,0 +1,438 @@
+  /* Stilovi za malu dimenziju ekrana (širina veća od 480 piksela) */
+  @media only screen and (max-width: 480px) {
+    /* Općeniti stilovi */
+    header {
+      padding: 40px;
+    }
+  
+    h1.naslov {
+      font-size: 36px;
+    }
+    
+    .izbornik::before{
+      content: "Izbornik";
+      color: white;
+    }
+    
+    .izbornik a:not(.navigacija){
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+    .izbornik:hover a:not(.navigacija){
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+    #banner {
+      height: 150px;
+    }
+  
+    main {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+    /* Stilovi za početnu stranicu i ponude */
+
+    #map-egipat > #mapa{
+      height:300px;
+      width:90%;
+      align-self: center;
+    }
+    #pilos{
+      height:300px;
+      width:90%;
+      align-self: center;
+    }
+
+    #i-slika{
+      height:auto;
+      width:100%;
+    }
+
+    .ponuda-eg, .ponuda-gr{
+      font-size: 14px;
+    }
+
+    .ponuda {
+      align-items: center;
+      text-align: center;
+      width: 80%;
+    }
+
+    .ponuda_slika {
+      width: auto;
+      height: 200px;
+    }
+
+    /* Stilovi kontakt */
+
+    .kontakt-obrazac {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .kontakt-obrazac form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+    }
+  
+    .kontakt-obrazac form div {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  
+    .kontakt-obrazac form span {
+      margin-bottom: 10px;
+    }
+  
+    .kontakt-obrazac form input[type="text"],
+    .kontakt-obrazac form textarea {
+      width: 95%;
+      margin-bottom: 10px;
+    }
+        
+    #predmet-upita{
+      width: 90%;
+    }
+
+    #opis-upita{
+      width: 90%;
+    }
+    /* Stilovi rezervacija */
+
+    .rezervacija form fieldset {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .rezervacija form fieldset label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .rezervacija form fieldset input,
+    .rezervacija form fieldset select,
+    .rezervacija form fieldset textarea {
+      width: 90%;
+      margin-bottom: 10px;
+    } 
+
+    /* Stilovi tablica */
+
+    table tr th:nth-child(2),
+    table tr td:nth-child(2),
+    table tr th:nth-child(3),
+    table tr td:nth-child(3) {
+      display: none;
+    }
+    
+    .cjenik{
+      align-items: center;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Stilovi galerija */
+  
+    .figura{
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-bottom: 20px;
+    }
+    .figura {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .figura img {
+      width: 100%;
+      height: auto;
+    }
+
+    .figura-div:hover{
+      transform: scaleY(1.1);
+    }
+  }
+  
+  /* Stilovi za srednju dimenziju ekrana (širina između 480 i 1024 piksela) */
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {    
+    /* Općeniti stilovi */
+    body{
+      background-color: #152A3A;
+      color: #FFF;
+    }
+
+    main {
+      margin: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2{
+      color: #152A3A;
+    }
+
+    header {
+      padding: 30px;
+      background-color: #A6DCEC;
+    }
+  
+    h1.naslov {
+      font-size: 28px;
+      color: #152A3A;
+    }
+    
+    nav.izbornik {
+      padding: 15px;
+      color: #FFF;
+      background-color: #73A9AD;
+    }
+
+    .izbornik a:hover {
+      background-color: #FFF;
+      color: #73A9AD;
+    }
+
+    #banner {
+      height: 250px;
+    }
+
+    footer{
+      background-color: #A6DCEC;
+      color: #152A3A;
+    }
+
+    footer a {
+      color: #152A3A;
+      text-decoration: none;
+    }
+
+    /* Stilovi za početnu stranicu i ponude */
+
+    #mapa, #pilos{
+      height:400px;
+      width:100%;
+    }
+    
+    .ponuda a{
+      color:#152A3A
+    }
+
+    .ponuda_slika {
+      width: auto;
+      height: 250px;
+    }
+
+    .ponuda {
+      background-color: #A6DCEC;
+    }
+
+    #i-slika{
+      height:auto;
+      width:100%;
+    }
+
+    /* Stilovi autor */
+
+    #autor{
+      background-color: #152A3A;
+      color: white;
+    }
+
+    /* Stilovi kontakt */
+    
+    .kontakt-obrazac {
+      flex-direction: row;
+      margin-top: 40px;
+    }
+  
+    .kontakt-obrazac form {
+      width: 100%;
+      margin-left: 20px;
+    }
+  
+    .kontakt-obrazac form div {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .kontakt-obrazac form span {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .kontakt-obrazac form input[type="text"],
+    .kontakt-obrazac form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    /* Stilovi rezervacija */
+
+    .rezervacija form fieldset {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rezervacija form fieldset label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .rezervacija form fieldset input ~
+    .rezervacija form fieldset select ~
+    .rezervacija form fieldset textarea {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+
+    .rezervacija-t {
+      background-color: #E6F4F8;
+    }
+
+    .rezervacija-t h1 {
+      color: #152A3A;
+    }
+
+    .rezervacija label {
+      color: #152A3A;
+    }
+    
+    .rezervacija .botun[type="submit"] {
+      background-color: #152A3A;
+      color: #FFF;
+    }
+
+    .rezervacija .botun[type="reset"] {
+      background-color: #FFF;
+      color: #152A3A;
+    }
+    
+    /* Stilovi tablica */
+
+    .cjenik {
+      margin-top: 20px;
+    }
+    
+    .tablica {
+      background-color: #1C1C1C;
+      padding: 20px;
+      border-collapse: collapse;
+      border: 1px solid #FFFFFF;
+    }
+
+    td, th {
+      border: 1px solid white;
+    }
+    .tablica caption {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #FFFFFF;
+    }
+   
+    .tablica th  .tablica td {
+      border: 1px solid #FFFFFF;
+      padding: 8px;
+      color: #FFFFFF;
+    }
+    
+    .tablica th {
+      background-color: #FF2E63;
+    }
+    
+    .tablica tr:nth-child(even) {
+      background-color: #323232;
+    }
+    .tablica tr:nth-child(odd) {
+      background-color: #761e94;
+    }
+    .tablica tr:hover {
+      background-color: #FF4D88;
+    }
+  }
+  
+  /* Stilovi za veliku dimenziju ekrana (širina veća od 1024 piksela) */
+  @media only screen and (min-width: 1025px) {
+    /* OPćeniti stilovi */
+
+    header {
+      padding: 20px;
+    }
+  
+    h1.naslov {
+      font-size: 24px;
+    }
+  
+    nav.izbornik {
+      padding: 10px;
+    }
+  
+    nav.izbornik a {
+      margin: 0 10px;
+    }
+  
+    #banner {
+      height: 350px;
+    }
+  
+    main {
+      margin: 20px;
+      display: grid;
+      place-items: center;
+      justify-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      }
+      
+    /* Stilovi za početnu i ponude */
+    .ponuda {
+      align-items: center;
+      text-align: center;
+    }
+      
+    .ponuda_slika {
+      width: auto;
+      height: 150px;
+    }
+
+    /* Stilovi rezervacija */
+
+    .rezervacija form {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 20px;
+    }
+  
+    .rezervacija fieldset{
+      padding: 10px;
+    }
+
+    /* Stilovi galerija */
+    .figura-div{
+      align-items: center;
+      text-align: center;
+    }
+    
+    .figura {
+      width: 100%;
+      margin: 0;
+    }
+  }
+      
+  

@@ -1,0 +1,14 @@
+</div>
+        </div>
+        <div id="info">
+        </div>
+    </main>
+    <footer>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png">
+        </a> Matej Desanić &copy;, 2023
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2023%2Fzadaca_02%2Fmdesanic21%2Fostalo%2Fcjenik.html"><img src="../dokumenti/slike/HTML5.png" alt="htmllogo" width="50" height="50" ></a>
+    </footer>
+</body>
+</html>

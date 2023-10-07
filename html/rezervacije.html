@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Rezervacije</title>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Matej Desanić">
+        <meta name="Opis" content="Obrazac za rezervacije kojim korisnik može na svoje ime rezervirati sobu u nekom od hotela koje nudimo, a ovisi o kliku na rezervacije na ponudi.">
+        <meta name="Ključne riječi" content="Datum, vrijeme, rezervacija">
+        <link rel="stylesheet" type="text/css" href="/css/mdesanic21.css">
+        <link rel="stylesheet" type="text/css" href="/css/mdesanic21_responzivni_dizajn.css">
+        <script src="/javascript"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="/index"><img src="/dokumenti/slike/logo.png" alt="Hotel Bravado" id="logo" width="60" height="60"></a>            <h1 class="naslov">Hotel Bravado</h1>
+        </header>
+        <nav class="izbornik">
+            <a href="/index" >Početna</a>
+            <a href="/autor">Autor</a>
+            <a href="/cjenik">Cjenik</a>
+            <a href="/galerija">Galerija</a>
+            <a href="/kontakt">Kontakt</a>
+            <a href="/rezervacije" id="trenutni">Rezervacije</a>
+            <a href="/dokumentacija">Dokumentacija</a>
+            <a href="/dinamicna">Dinamična</a>
+            <a href="/api/rezervacije">REST servisi</a>
+        </nav>
+        <img src="/dokumenti/slike/banner.jpg" id="banner" height="250" alt="banner">
+        <main>
+            <div></div>
+        <div class="rezervacija-t">
+            <h1>Rezervacija: </h1>
+            <div class="rezervacija">
+                <div id="greska"></div>
+                <form action="http://spider.foi.hr:12340/api/rezervacije" method="post" novalidate id="reservationForm">
+                    <fieldset id="osobni">
+                        <legend>Osobni podaci</legend>
+                            <label>Ime i prezime</label>
+                            <input type="text" name="ime_prez" value="" class="tekst" id="ime_prezime">
+                            <br>
+                            <label>Email</label>
+                            <input type="email" name="email" value="" id="email" class="tekst">
+                            <br>
+                            <label>Broj telefona</label>
+                            <input type="tel" name="broj" value="" id="broj" class="tekst" >
+                    </fieldset>
+                    <div id="poruka_1"></div>
+                    <fieldset id="rez">
+                        <legend>Podaci o rezervaciji</legend>
+                            <label>Hotel: </label>
+                            <select name="lokacija" class="botun" id="lokacija">
+                                <option value="">-- Odaberite hotel --</option>
+                                <option value="Egipat">Egipat</option>
+                                <option value="Grčka">Grčka</option>
+                                <option value="Turska">Turska</option>
+                            </select>
+                            <br>
+                            <label>Datum dolaska: </label>
+                            <input type="date" name="dolazak" id="dolazak" value="" class="botun">
+                            <br>
+                            <label>Datum odlaska: </label>
+                            <input type="date" name="odlazak" id="odlazak" value="" class="botun">
+                            <br>
+                            <label>Vrijeme dolaska: </label>
+                            <input type="time" name="dolazak_vrime" id="dolazak_vrime" value="" class="botun">
+                            <br>
+                            <label>Odaberite tip sobe: </label>
+                            <select name="tip" id="tip" class="botun">
+                                <option value="">-- Odaberite tip sobe --</option>
+                                <option value="jednokrevetna">Jednokrevetna</option>
+                                <option value="dvokrevetna">Dvokrevetna</option>
+                                <option value="trokrevetna">Trokrevetna</option>
+                                <option value="apartman">Apartman</option>
+                            </select>
+                    </fieldset>
+                    <div id="poruka_2"></div>
+                    <fieldset id="napomene" name="napomene">
+                        <legend>Napomene</legend>
+                        <label for="napomena">Napišite svoje napomene: </label>
+                        <br>
+                        <textarea id="napomena" name="napomena" rows="10" cols="40" placeholder="Upišite ovdje vašu poruku (maks. 1000 znakova)" minlength="10" maxlength="1000"></textarea>
+                        <div class="popuni"></div>
+                        <button type="submit" class="botun" id="submitButton">Rezerviraj</button>
+                        <button type="reset" class="botun">Osvježi</button>
+                    </fieldset>
+                    <div id="poruka_3"></div>
+                    <div id="poruka_4"></div>
+            </form>
+            <div id="popuni"></div>
+        </div>
+        </div>
+        </main>
+        <footer>
+            <br>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png">
+            </a> Matej Desanić &copy;, 2023
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2023%2Fzadaca_02%2Fmdesanic21%2Fostalo%2Frezervacije.html"><img src="../dokumenti/slike/HTML5.png" alt="htmllogo" width="50" height="50" ></a>
+        </footer>
+    </body>
+</html>

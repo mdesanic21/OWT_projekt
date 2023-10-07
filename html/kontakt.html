@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Obrazac za kontakt</title>
+    <meta charset="UTF-8">
+    <meta name="Autor" content="Matej Desanić">
+    <meta name="Opis" content="Obrazac za kontaktiranje hotela uz potrebno naznačivanje o kakvom tipu upita je riječ.">
+    <meta name="Kljucne rijeci" content="Poruka, tip upita, kontakt">
+    <link rel="stylesheet" type="text/css" href="/css/mdesanic21.css">
+    <link rel="stylesheet" type="text/css" href="/css/mdesanic21_responzivni_dizajn.css">
+    <script src="/javascript"></script>
+</head>
+
+<body>
+    <header>
+      <a href="/index"><img src="/dokumenti/slike/logo.png" alt="Hotel Bravado" id="logo" width="60" height="60"></a>        <h1 class="naslov">Hotel Bravado</h1>
+    </header>
+    <nav class="izbornik">
+      <a href="/index">Početna</a>
+      <a href="/autor">Autor</a>
+      <a href="/cjenik">Cjenik</a>
+      <a href="/galerija">Galerija</a>
+      <a href="/kontakt" id="trenutni">Kontakt</a>
+      <a href="/rezervacije">Rezervacije</a>
+      <a href="/dokumentacija">Dokumentacija</a>
+      <a href="/dinamicna">Dinamična</a>
+      <a href="/api/rezervacije">REST servisi</a>
+    </nav>
+    <img src="/dokumenti/slike/banner.jpg" id="banner" height="250" alt="banner">
+    <main>
+      <div></div>
+    <div class="kontakt-obrazac">
+        <h1>Kontakt: </h1>
+        <form action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="post">
+            <div id="predmet-upita">
+                <input type="text" id="predmet" name="predmet" maxlength="30" placeholder="Predmet vašeg upita">
+            </div>
+            <div id="opis-upita">
+              <textarea id="poruka" name="poruka" rows="10" cols="40" maxlength="1000" placeholder="Upišite ovdje vašu poruku (maks. 1000 znakova)"></textarea>
+            </div>
+            <div id="vrsta-upita">
+                <span>Odaberite vrstu upita:</span>
+                <br>
+                  <input type="radio" name="query_type" value="1" checked> Općeniti upit
+                <br>
+                  <input type="radio" name="query_type" value="2"> Tehnički problem
+                <br>
+                  <input type="radio" name="query_type" value="3"> Prijedlog
+                <br>
+                  <input type="radio" name="query_type" value="4"> Ostalo
+            </div>
+            <button type="submit" class="botun">Pošalji</button>
+          </form>
+    </div>
+    </main>
+    <footer>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png">
+        </a> Matej Desanić &copy;, 2023
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FOWT%2F2023%2Fzadaca_02%2Fmdesanic21%2Fostalo%2Fkontakt.html"><img src="../dokumenti/slike/HTML5.png" alt="htmllogo" width="50" height="50"></a>
+    </footer>
+</body>
+</html>

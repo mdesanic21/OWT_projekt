@@ -1,0 +1,5 @@
+ime_prez,email,broj,lokacija,dolazak,odlazak,dolazak_vrime,tip,napomena
+John Doe,johndoe@example.com,1234567890,Egipat,2023-06-01,2023-06-07,10:00,jednokrevetna,Nema napomena
+Jane Smith,janesmith@example.com,9876543210,Grčka,2023-07-15,2023-07-25,14:30,dvokrevetna,Želimo pogled na more
+Joe Montana,joemonatana@example.com,98 171 7765,Turska,2023-08-15,2023-08-25,13:30,dvokrevetna,Želimo pistaccie u sobi
+
